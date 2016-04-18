@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="14F1021" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" initialViewController="01J-lp-oVM">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Llm-lL-Icb"/>
+                        <viewControllerLayoutGuide type="bottom" id="xb3-aO-Qok"/>
+                    </layoutGuides>
+                    <view key="view" alpha="0.80000000000000004" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="black-music-wallpaper" translatesAutoresizingMaskIntoConstraints="NO" id="aCh-kM-tYD">
+                                <rect key="frame" x="0.0" y="113" width="600" height="375"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="aCh-kM-tYD" secondAttribute="height" multiplier="600:375" id="kwl-1x-FE8"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="By: Juan Andrés Cárdenas Diaz" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5iH-n8-Uqp">
+                                <rect key="frame" x="35" y="574" width="540" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="xb3-aO-Qok" firstAttribute="top" secondItem="5iH-n8-Uqp" secondAttribute="bottom" constant="5" id="BUM-M3-ieb"/>
+                            <constraint firstItem="5iH-n8-Uqp" firstAttribute="height" secondItem="Ze5-6b-2t3" secondAttribute="height" id="JaS-MU-UVw"/>
+                            <constraint firstItem="aCh-kM-tYD" firstAttribute="centerY" secondItem="Ze5-6b-2t3" secondAttribute="centerY" id="NPN-4X-XFt"/>
+                            <constraint firstItem="5iH-n8-Uqp" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" multiplier="0.9" id="UGa-xW-yCt"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="5iH-n8-Uqp" secondAttribute="trailing" constant="5" id="lhY-Gw-KrD"/>
+                            <constraint firstItem="aCh-kM-tYD" firstAttribute="width" secondItem="Ze5-6b-2t3" secondAttribute="width" id="wkX-Lg-gmV"/>
+                            <constraint firstItem="aCh-kM-tYD" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="wvB-IM-cPZ"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="JaS-MU-UVw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="53" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="black-music-wallpaper" width="600" height="375"/>
+    </resources>
+</document>
